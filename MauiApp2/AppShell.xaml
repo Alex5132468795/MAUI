@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp2"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar Shell.TabBarBackgroundColor="Black" Shell.TabBarForegroundColor="Yellow" Shell.TabBarUnselectedColor="Blue">
+        <Tab  Title="Все" Icon="dotnet_bot.png" Shell.TabBarBackgroundColor="Gold" Shell.TabBarForegroundColor="Red" Shell.TabBarUnselectedColor="Azure">
+            <ShellContent 
+                Shell.BackgroundColor="Green"
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+            <ShellContent 
+                Shell.BackgroundColor="Aqua"
+        Title="1"
+        ContentTemplate="{DataTemplate local:NewPage1}"
+        Route="NewPage1" />
+            <ShellContent 
+                Shell.BackgroundColor="Black"
+        Title="2"
+        ContentTemplate="{DataTemplate local:NewPage2}"
+        Route="NewPage2" />
+            <ShellContent 
+                Shell.BackgroundColor="Red"
+        Title="3"
+        ContentTemplate="{DataTemplate local:NewPage3}"
+        Route="NewPage3" />
+            <ShellContent 
+                Shell.BackgroundColor="BlueViolet"
+        Title="4"
+        ContentTemplate="{DataTemplate local:NewPage4}"
+        Route="NewPage4" />
+            <ShellContent 
+                Shell.BackgroundColor="Coral"
+        Title="5"
+        ContentTemplate="{DataTemplate local:NewPage5}"
+        Route="NewPage5" />
+        </Tab>
+        <Tab Title="Дом - 1" Icon="dotnet_bot.png">
+            <ShellContent 
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+            <ShellContent
+        Title="1"
+        ContentTemplate="{DataTemplate local:NewPage1}"
+        Route="NewPage1" />
+        </Tab>
+        <Tab Icon="dotnet_bot.png" Title="1 - 2">
+            <ShellContent
+        Title="1"
+        ContentTemplate="{DataTemplate local:NewPage1}"
+        Route="NewPage1" />
+            <ShellContent
+        Title="2"
+        ContentTemplate="{DataTemplate local:NewPage2}"
+        Route="NewPage2" />
+        </Tab>
+        <Tab Icon="dotnet_bot.png" Title="2 - 3" Shell.TabBarBackgroundColor="Blue" Shell.TabBarForegroundColor="Yellow" Shell.TabBarUnselectedColor="Wheat">
+            <ShellContent
+        Title="2"
+        ContentTemplate="{DataTemplate local:NewPage2}"
+        Route="NewPage2" />
+            <ShellContent
+        Title="3"
+        ContentTemplate="{DataTemplate local:NewPage3}"
+        Route="NewPage3" />
+        </Tab>
+        <Tab Icon="dotnet_bot.png" Title="3 - 4" Shell.TabBarBackgroundColor="Gray" Shell.TabBarForegroundColor="Black" Shell.TabBarUnselectedColor="DarkBlue">
+            <ShellContent
+        Title="3"
+        ContentTemplate="{DataTemplate local:NewPage3}"
+        Route="NewPage3" />
+            <ShellContent
+        Title="4"
+        ContentTemplate="{DataTemplate local:NewPage4}"
+        Route="NewPage4" />
+        </Tab>
+        <Tab Icon="dotnet_bot.png" Title="4 - Дом" Shell.TabBarBackgroundColor="Blue" Shell.TabBarForegroundColor="Red" Shell.TabBarUnselectedColor="Aquamarine">
+            <ShellContent
+        Title="4"
+        ContentTemplate="{DataTemplate local:NewPage4}"
+        Route="NewPage4" />
+            <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        </Tab>
+    </TabBar>
+</Shell>
